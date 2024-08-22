@@ -123,31 +123,31 @@ async def process_files(files: List[Element]):
         for file_id in file_ids
     ]
 
-@cl.set_starters
-async def set_starters():
-    return [
-        cl.Starter(
-            label="신입생 영어기초학력평가",
-            message="한양대학교 신입생 영어 기초학력 평가에 대해서 자세히 알려줘",
-            icon="/public/idea_big.png",
-            ),
+# @cl.set_starters
+# async def set_starters():
+#     return [
+#         cl.Starter(
+#             label="신입생 영어기초학력평가",
+#             message="한양대학교 신입생 영어 기초학력 평가에 대해서 자세히 알려줘",
+#             icon="/public/idea_big.png",
+#             ),
 
-        cl.Starter(
-            label="성적처리",
-            message="한양대학교 성적처리와 성적 등급 비율에 대해서 알려줘.",
-            icon="/public/report_card_big.png",
-            ),
-        cl.Starter(
-            label="기숙사 신청 일정",
-            message="한양대학교 기숙사에 대해서 알려줘.",
-            icon="/public/center_big.png",
-            ),
-        cl.Starter(
-            label="수강신청 일정",
-            message="한양대학교 2024학년도 1학기 수강신청 일정에 대해서 알려줘.",
-            icon="/public/calendar_big.png",
-            )
-        ]
+#         cl.Starter(
+#             label="성적처리",
+#             message="한양대학교 성적처리와 성적 등급 비율에 대해서 알려줘.",
+#             icon="/public/report_card_big.png",
+#             ),
+#         cl.Starter(
+#             label="기숙사 신청 일정",
+#             message="한양대학교 기숙사에 대해서 알려줘.",
+#             icon="/public/center_big.png",
+#             ),
+#         cl.Starter(
+#             label="수강신청 일정",
+#             message="한양대학교 2024학년도 1학기 수강신청 일정에 대해서 알려줘.",
+#             icon="/public/calendar_big.png",
+#             )
+#         ]
 
 @cl.on_chat_start
 async def start_chat():
